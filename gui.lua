@@ -1,5 +1,4 @@
--- gui.lua
-
+-- Gestion de l'interface utilisateur
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
@@ -14,7 +13,7 @@ local function CreateButton(frame, text, callback)
     return button
 end
 
-function CreateGUI()
+function CreateGUI(rodManager, teleportManager, autoFarmManager)
     local ScreenGui = Instance.new("ScreenGui")
     ScreenGui.Name = "FishSimulatorGUI"
     ScreenGui.Parent = game.CoreGui
@@ -34,18 +33,18 @@ function CreateGUI()
 
     -- Bouton pour obtenir les cannes
     CreateButton(MainFrame, "Get All Rods", function()
-        GetAllRods()
+        rodManager:getAllRods()
     end)
 
     -- Bouton pour téléporter
     local teleportButton = CreateButton(MainFrame, "Teleport", function()
-        local selectedLocation = next(TeleportLocations) -- Sélection de la première localisation par défaut
-        TeleportTo(TeleportLocations[selectedLocation])
+        local selectedLocation = next(teleportManager.config.TeleportLocations) -- Sélection de la première localisation par défaut
+        teleportManager:teleportTo(selectedLocation)
     end)
 
     -- Bouton pour l'auto-farm
     CreateButton(MainFrame, "Toggle Auto-Farm", function()
-        StartAutoFarm()
+        autoFarmManager:startAutoFarm()
     end)
 end
 
