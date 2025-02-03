@@ -1,4 +1,4 @@
-# # Fish Script for Roblox
+# Fish Script for Roblox
 
 ## Description
 
@@ -30,6 +30,8 @@ Ce script est conçu pour automatiser plusieurs aspects du jeu Fish Simulator su
 
 - `main.lua` - Le script principal avec toutes les fonctionnalités.
 - `gui.lua` - Gère la création de l'interface utilisateur.
+- `config.lua` - Configuration du script.
+- `modules/` - Contient les modules pour la gestion des cannes, téléportations, auto-farm et débogage.
 - `README.md` - Ce fichier que vous lisez actuellement.
 - `images/` - Optionnel pour des captures d'écran ou des exemples visuels.
 
