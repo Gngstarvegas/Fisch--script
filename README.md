@@ -1,4 +1,4 @@
-# # Fish Simulator Script for Roblox
+# # Fish Script for Roblox
 
 ## Description
 
