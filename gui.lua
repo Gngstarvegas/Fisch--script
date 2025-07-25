@@ -1,4 +1,4 @@
--- Interface utilisateur optimisée pour Fish Simulator
+-- Interface utilisateur optimisée pour Fisch
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local UserInputService = game:GetService("UserInputService")

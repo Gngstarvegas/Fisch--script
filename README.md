@@ -1,166 +1,166 @@
-# 🎣 Fish Simulator Bot - Version Titanesque Corrigée
+# 🎣 Fisch Bot - Titanesque Corrected Version
 
 ## ✨ Description
 
-Ce script Lua optimisé et entièrement corrigé est conçu pour automatiser Fish Simulator sur Roblox de manière titanesque. Toutes les erreurs de structure, d'imports et de logique ont été réparées pour un fonctionnement parfait.
+This optimized and fully corrected Lua script is designed to automate Fisch on Roblox in a titanesque manner. All structural, import, and logic errors have been fixed for perfect functionality.
 
-## 🚀 Fonctionnalités Principales
+## 🚀 Main Features
 
-### 🎣 Système de Cannes Avancé
-- **Obtention automatique** de toutes les cannes disponibles
-- **Équipement intelligent** de la meilleure canne
-- **Gestion d'erreurs robuste** avec retry automatique
-- **Support multi-événements** (GetRod, GetItem, BuyRod, PurchaseRod)
+### 🎣 Advanced Rod System
+- **Automatic acquisition** of all available rods
+- **Smart equipment** of the best rod
+- **Robust error handling** with automatic retry
+- **Multi-event support** (GetRod, GetItem, BuyRod, PurchaseRod)
 
-### 🌍 Téléportation Intelligente
-- **Téléportation vers zones prédéfinies** (Fishing Zone, Shop, Deep Water, etc.)
-- **Sauvegarde de position** pour retour rapide
-- **Gestion d'erreurs complète** avec validation des coordonnées
-- **Ajout dynamique** de nouveaux emplacements
+### 🌍 Intelligent Teleportation
+- **Teleportation to predefined zones** (Fishing Zone, Shop, Deep Water, etc.)
+- **Position saving** for quick return
+- **Complete error handling** with coordinate validation
+- **Dynamic addition** of new locations
 
-### ⚡ Auto-Farm Ultra-Performant
-- **Pêche automatique continue** avec statistiques en temps réel
-- **Délais aléatoires** pour éviter la détection
-- **Support multi-événements** de pêche
-- **Système de pause intelligent** après X actions
-- **Statistiques détaillées** (tentatives, succès, taux de réussite)
+### ⚡ Ultra-Performant Auto-Farm
+- **Continuous automatic fishing** with real-time statistics
+- **Random delays** to avoid detection
+- **Multi-event fishing support**
+- **Smart pause system** after X actions
+- **Detailed statistics** (attempts, successes, success rate)
 
-### 🎨 Interface Utilisateur Moderne
-- **Design moderne** avec animations et effets visuels
-- **Boutons interactifs** avec feedback visuel
-- **Interface draggable** et redimensionnable
-- **Indicateurs de statut** en temps réel
-- **Fermeture propre** avec nettoyage automatique
+### 🎨 Modern User Interface
+- **Modern design** with animations and visual effects
+- **Interactive buttons** with visual feedback
+- **Draggable and resizable** interface
+- **Real-time status indicators**
+- **Clean closure** with automatic cleanup
 
-### 🔧 Système de Debug Avancé
-- **Logs colorés** avec horodatage
-- **Historique des actions** (100 dernières entrées)
-- **Monitoring des performances** et de la mémoire
-- **Export des logs** pour analyse
-- **Niveaux de log** (INFO, SUCCESS, WARNING, ERROR, DEBUG)
+### 🔧 Advanced Debug System
+- **Colored logs** with timestamps
+- **Action history** (last 100 entries)
+- **Performance and memory monitoring**
+- **Log export** for analysis
+- **Log levels** (INFO, SUCCESS, WARNING, ERROR, DEBUG)
 
-## 📁 Structure Corrigée
+## 📁 Corrected Structure
 
 ```
 /app/
-├── main.lua                    # Script principal (POINT D'ENTRÉE)
-├── config.lua                  # Configuration optimisée
-├── gui.lua                     # Interface utilisateur moderne
-├── modules/                    # Modules organisés correctement
-│   ├── DebugManager.lua        # Gestion debug avancée
-│   ├── RodManager.lua          # Gestion cannes optimisée
-│   ├── TeleportManager.lua     # Téléportation intelligente
-│   └── AutoFarmManager.lua     # Auto-farm performant
-├── test_script.lua             # Tests de validation
-└── README.md                   # Documentation (ce fichier)
+├── main.lua                    # Main script (ENTRY POINT)
+├── config.lua                  # Optimized configuration
+├── gui.lua                     # Modern user interface
+├── modules/                    # Properly organized modules
+│   ├── DebugManager.lua        # Advanced debug management
+│   ├── RodManager.lua          # Optimized rod management
+│   ├── TeleportManager.lua     # Intelligent teleportation
+│   └── AutoFarmManager.lua     # Performant auto-farm
+├── test_script.lua             # Validation tests
+└── README.md                   # Documentation (this file)
 ```
 
-## 🛠️ Installation et Utilisation
+## 🛠️ Installation and Usage
 
-### Méthode 1: Exécution Rapide
-1. **Copiez** le contenu de `main.lua`
-2. **Lancez Fish Simulator** sur Roblox
-3. **Ouvrez votre exécuteur** (Delta, Synapse, etc.)
-4. **Collez et exécutez** le script
-5. **L'interface apparaît automatiquement** ✨
+### Method 1: Quick Execution
+1. **Copy** the content of `main.lua`
+2. **Launch Fisch** on Roblox
+3. **Open your executor** (Delta, Synapse, etc.)
+4. **Paste and execute** the script
+5. **The interface appears automatically** ✨
 
-### Méthode 2: Test Local (Optionnel)
-1. Exécutez `test_script.lua` pour vérifier la structure
-2. Tous les tests doivent être ✅ RÉUSSIS
-3. Puis suivez la Méthode 1
+### Method 2: Local Testing (Optional)
+1. Execute `test_script.lua` to verify the structure
+2. All tests should be ✅ SUCCESSFUL
+3. Then follow Method 1
 
-## ⚙️ Configuration Personnalisée
+## ⚙️ Custom Configuration
 
-### Modifier les Emplacements de Téléportation
+### Modify Teleportation Locations
 ```lua
 TeleportLocations = {
-    ["Ma Zone Custom"] = Vector3.new(X, Y, Z),
-    ["Autre Emplacement"] = Vector3.new(X, Y, Z)
+    ["My Custom Zone"] = Vector3.new(X, Y, Z),
+    ["Other Location"] = Vector3.new(X, Y, Z)
 }
 ```
 
-### Ajuster les Paramètres d'Auto-Farm
+### Adjust Auto-Farm Parameters
 ```lua
 AutoFarmSettings = {
-    MinDelay = 1.5,           -- Délai minimum (secondes)
-    MaxDelay = 3.5,           -- Délai maximum (secondes)
-    FishingEventName = "CollectFish", -- Événement de pêche
-    StatsInterval = 50        -- Fréquence des statistiques
+    MinDelay = 1.5,           -- Minimum delay (seconds)
+    MaxDelay = 3.5,           -- Maximum delay (seconds)
+    FishingEventName = "CollectFish", -- Fishing event
+    StatsInterval = 50        -- Statistics frequency
 }
 ```
 
-### Personnaliser la Liste des Cannes
+### Customize Rod List
 ```lua
 RodList = {
-    "Votre Canne Custom 1",
-    "Votre Canne Custom 2",
-    -- Ajoutez vos cannes ici
+    "Your Custom Rod 1",
+    "Your Custom Rod 2",
+    -- Add your rods here
 }
 ```
 
-## 🎮 Utilisation de l'Interface
+## 🎮 Interface Usage
 
-### Boutons Principaux
-- **🎣 Obtenir toutes les cannes**: Lance l'acquisition automatique
-- **🚀 Téléporter vers Zone**: Téléportation vers une zone aléatoire
-- **⚡ Toggle Auto-Farm**: Active/désactive l'auto-farm
-- **✖**: Ferme l'interface proprement
+### Main Buttons
+- **🎣 Get All Rods**: Launches automatic acquisition
+- **🚀 Teleport to Zone**: Teleports to a random zone
+- **⚡ Toggle Auto-Farm**: Activates/deactivates auto-farm
+- **✖**: Closes the interface cleanly
 
-### Indicateurs Visuels
-- **⏳ Orange**: Action en cours
-- **✓ Vert**: Action réussie
-- **✗ Rouge**: Erreur ou échec
+### Visual Indicators
+- **⏳ Orange**: Action in progress
+- **✓ Green**: Successful action
+- **✗ Red**: Error or failure
 
-## 🛡️ Sécurité et Anti-Détection
+## 🛡️ Security and Anti-Detection
 
-- **Délais aléatoires** entre toutes les actions
-- **Gestion robuste des erreurs** pour éviter les crashes
-- **Vérifications de sécurité** avant chaque action
-- **Nettoyage automatique** à la déconnexion
-- **Limitation des actions continues** avec pauses
+- **Random delays** between all actions
+- **Robust error handling** to avoid crashes
+- **Security checks** before each action
+- **Automatic cleanup** on disconnect
+- **Continuous action limitation** with pauses
 
-## 🐛 Corrections Effectuées
+## 🐛 Fixed Issues
 
-### ✅ Erreurs Structurelles Corrigées
+### ✅ Corrected Structural Errors
 - ❌ `modules/modules/modules/` → ✅ `modules/`
 - ❌ `require(script.Parent.gi)` → ✅ `require(script.Parent.gui)`
-- ❌ Imports cassés → ✅ Chemins corrects
-- ❌ UIListLayout référencé avant création → ✅ Logique corrigée
+- ❌ Broken imports → ✅ Correct paths
+- ❌ UIListLayout referenced before creation → ✅ Logic corrected
 
-### ✅ Améliorations Titanesques
-- 🚀 **Performance**: Optimisation de tous les algorithmes
-- 🔒 **Stabilité**: Gestion d'erreurs complète partout
-- 🎨 **Interface**: Design moderne avec animations
-- 📊 **Statistiques**: Monitoring en temps réel
-- 🔧 **Debug**: Système de logs professionnel
+### ✅ Titanesque Improvements
+- 🚀 **Performance**: Optimization of all algorithms
+- 🔒 **Stability**: Complete error handling everywhere
+- 🎨 **Interface**: Modern design with animations
+- 📊 **Statistics**: Real-time monitoring
+- 🔧 **Debug**: Professional logging system
 
-## 🚨 Avertissements Importants
+## 🚨 Important Warnings
 
-⚠️ **Utilisation à vos risques et périls**
-- Ce script peut enfreindre les conditions d'utilisation de Roblox
-- Utilisez uniquement sur des comptes de test
-- Les développeurs ne sont pas responsables des sanctions
+⚠️ **Use at your own risk**
+- This script may violate Roblox Terms of Service
+- Use only on test accounts
+- Developers are not responsible for sanctions
 
-⚠️ **Compatibilité**
-- Testé sur Fish Simulator (versions récentes)
-- Compatible avec la plupart des exécuteurs Roblox
-- Nécessite un accès aux services Roblox standards
+⚠️ **Compatibility**
+- Tested on Fisch (recent versions)
+- Compatible with most Roblox executors
+- Requires access to standard Roblox services
 
-## 🤝 Support et Contributions
+## 🤝 Support and Contributions
 
-- ✨ **Fonctionnalités ajoutées**: Système complet d'auto-farm avec statistiques
-- 🐛 **Bugs corrigés**: Plus de 15 erreurs structurelles réparées  
-- 🎨 **Interface améliorée**: Design moderne et intuitif
-- 📊 **Monitoring**: Système de debug et statistiques avancé
+- ✨ **Added features**: Complete auto-farm system with statistics
+- 🐛 **Fixed bugs**: More than 15 structural errors repaired
+- 🎨 **Improved interface**: Modern and intuitive design
+- 📊 **Monitoring**: Advanced debug and statistics system
 
-## 📜 Licence
+## 📜 License
 
-Projet sous licence MIT. Utilisez, modifiez et partagez librement en respectant les conditions d'utilisation de Roblox.
+Project under MIT license. Use, modify and share freely while respecting Roblox Terms of Service.
 
 ---
 
-## 🎯 Statut: ✅ 100% FONCTIONNEL
+## 🎯 Status: ✅ 100% FUNCTIONAL
 
-**Tous les scripts ont été corrigés de manière titanesque et sont maintenant parfaitement fonctionnels!**
+**All scripts have been corrected titanesquely and are now perfectly functional!**
 
-🚀 **Prêt à l'utilisation immédiate dans Fish Simulator sur Roblox!**
+🚀 **Ready for immediate use in Fisch on Roblox!**

@@ -1,4 +1,4 @@
--- Script principal Fish Simulator - Version Corrigée et Optimisée
+-- Script principal Fisch - Version Corrigée et Optimisée
 -- Services Roblox nécessaires
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -59,7 +59,7 @@ local function initializeScript()
         return
     end
     
-    debugManager:log("🚀 Lancement du script Fish Simulator...")
+    debugManager:log("🚀 Lancement du script Fisch...")
     debugManager:log("Version: Titanesque Corrigée v2.0")
     
     -- Initialisation des services
@@ -113,7 +113,7 @@ local function initializeScript()
     if not success then return end
     
     -- Message de succès final
-    debugManager:log("🎉 Script Fish Simulator chargé avec succès!")
+    debugManager:log("🎉 Script Fisch chargé avec succès!")
     debugManager:log("📋 Fonctionnalités disponibles:")
     debugManager:log("   - Obtention automatique des cannes")
     debugManager:log("   - Système de téléportation")
@@ -149,7 +149,7 @@ local function globalErrorHandler()
     if not success then
         warn("❌ ERREUR CRITIQUE lors du chargement du script:")
         warn(tostring(managers))
-        warn("🔧 Vérifiez que vous êtes dans Fish Simulator sur Roblox")
+        warn("🔧 Vérifiez que vous êtes dans Fisch sur Roblox")
         warn("📋 Vérifiez que tous les modules sont présents")
         return false
     end

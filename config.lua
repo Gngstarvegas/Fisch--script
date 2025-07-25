@@ -1,4 +1,4 @@
--- Configuration optimisée du script Fish Simulator
+-- Configuration optimisée du script Fisch
 return {
     -- Mode débogage
     DebugMode = true,
@@ -43,8 +43,8 @@ return {
     
     -- Paramètres de l'interface
     UISettings = {
-        GuiName = "FishSimulatorGUI",
-        WindowTitle = "🎣 Fish Simulator Bot",
+        GuiName = "FischGUI",
+        WindowTitle = "🎣 Fisch Bot",
         WindowSize = Vector2.new(350, 280),
         ButtonHeight = 35,
         Padding = 10,
@@ -62,7 +62,7 @@ return {
     
     -- Messages personnalisés
     Messages = {
-        Welcome = "🎣 Fish Simulator Bot chargé avec succès!",
+        Welcome = "🎣 Fisch Bot chargé avec succès!",
         RodSuccess = "✓ Canne obtenue: ",
         RodFailed = "✗ Échec pour la canne: ",
         TeleportSuccess = "✓ Téléporté vers: ",
